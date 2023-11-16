@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/button.js"></script> 
+    <title>Recipes</title>
+</head>
+<body>
+    <a href="#main" id="skip">Skip to Main Content</a>
+    <header><h1>Recipes</h1></header>
+    <nav>
+        <div>
+            <li class="item-1"><div class="icon"></div><a href="index.html">Pets</a></li>
+            <li class="item-2 active"><div class="icon"></div><a href="recipes.html">Recipes<div class="active-icon"></div></a></li>
+            <li class="item-3"><div class="icon"></div><a href="travel.html">Travel</a></li>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="recipe">
+            <h2>Enchiladas Verdes de Pollo</h2>
+            <span>Origin: Mexico</span>
+            <span>Source: <a href="https://inmamamaggieskitchen.com/enchiladas-verdes-de-pollo/">Maggies Kitchen</a></span>
+            <span>Category: Main Dish</span>
+            <img class="main-dish" src="images/enchiladas_verde_de_pollo.jpg" width="400" alt="Mexican main dish">
+
+            <p>This is one of my favorite dishes to eat, especially my mother’s recipe but I do not know it or have access. There are a variety of recipes to make this dish and this happens to be different from my mother's because she does not place the enchiladas in the oven. I still think that it is a good recipe that should get you something similar.</p>
+            
+            <h3>Recipe</h3>
+            <button class="recipe-1" onclick="eitherChange('recipe-1')">Show More</button>
+            <!-- <button onclick="myHide('recipe-1')">Hide</button> -->
+            <div class="hide" id="recipe-1">
+                <h3>Recipe Ingredients </h3>
+                <ul>
+                    <li>2 lbs tomatillos (about 16 tomatillos)</li>
+                    <li>4 serrano peppers (stem removed)</li>
+                    <li>2 garlic cloves</li>
+                    <li>¼ onion roughly chopped</li>
+                    <li>4 cups water (enough to cover the tomatillos)</li>
+                    <li>1 bunch cilantro</li>
+                    <li>1 teaspoon salt</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>1 cup canola oil</li>
+                    <li>2 cups shredded chicken</li>
+                    <li>12 corn tortillas</li>
+                    <li>crema Mexicana as desired</li>
+                    <li>crumbled queso fresco (or cotija)</li>
+                    <li>diced raw onion as desired</li>
+                    <li>chopped cilantro as desired</li>
+                </ul>
+
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Place the tomatillos, garlic, serranos, onion, and water in a stockpot.</li>
+                    <li>Cover and bring to a boil.</li>
+                    <li>Simmer for 7-10 minutes.</li>
+                    <li>Discard water.</li>
+                    <li>Remove the ingredients from the stock pot and into the blender.</li>
+                    <li>Add salt and cilantro to the blender.</li>
+                    <li>Blend until smooth.</li>
+                    <li>Heat up oil in the same stock pot used to cook the salsa.</li>
+                    <li>Pour in the salsa verde and cook for 10 minutes.</li>
+                    <li>Stir occasionally.</li>
+                    <li>Heat up oil in a frying pan.</li>
+                    <li>Fry the tortillas. 1 minute on each side.</li>
+                    <li>Place on a paper towel to drain any excess oil.</li>
+                    <li>Repeat with all the tortillas.</li>
+                    <li>To assemble, place a tortilla in a baking dish, and using your best judgment add about 2 tbsps shredded chicken.</li>
+                    <li>Roll up the tortilla.</li>
+                    <li>Make sure the seam side is down.</li>
+                    <li>Repeat until with the remaining tortillas.</li>
+                    <li>Heat up the oven to 375 degrees F.</li>
+                    <li>Cover the tortillas with aluminum foil and place in the oven.</li>
+                    <li>Bake for 15 minutes.</li>
+                    <li>Keep in a warm oven until ready to serve.</li>
+                    <li>Pour a generous amount of the salsa verde on the plate.</li>
+                    <li>Add the chicken enchiladas to a plate.</li>
+                    <li>Pour more sauce on top.</li>
+                    <li>Add the desired toppings – crema Mexicana, queso fresco, cilantro, and onion.</li>
+                </ol>
+            </div>
+
+            <h3>Additional Food images</h3>
+            <div class="gallery">
+                <img src="https://inmamamaggieskitchen.com/wp-content/uploads/2021/09/Cooking-Salsa-Verde-1024x701.jpg" width="200" alt="The green cooking salsa.">
+                <img src="https://inmamamaggieskitchen.com/wp-content/uploads/2021/09/Rolling-Enchiladas-1024x1024.jpg" width="200" alt="The process of rolling the tortilla with the chicken.">
+                <img src="https://inmamamaggieskitchen.com/wp-content/uploads/2020/06/Frying-Corn-Tortilla-1024x733.jpg" width="200" alt="Frying the tortilla.">
+            </div>
+
+            <!-- James Alvarado -->
+        </div>
+        <div class="recipe">
+            <h2>Peanut Butter and Jelly Sandwich</h2>
+            <span>Origin: American</span>
+            <span>Source: Alex Likens</span>
+            <span>Category: Main Dish</span>
+            <img class="main-dish" src="images/peanut-butter-and-jelly-sandwich.jpg" width="400" alt="Primary image of food">
+
+            <p>This is a dish that is great at all times of year. Its mix of savory flavors with sweet jelly make sit a favorite dish for many people. This dish is great for any situation whether you are on the go, in a rush, or just looking for a tasty meal in your home.</p>
+            
+            <h3>Recipe</h3>
+            <button class="recipe-2" onclick="eitherChange('recipe-2')">Show More</button>
+            <!-- <button onclick="myHide('recipe-2')">Hide</button> -->
+            <div class="hide" id="recipe-2">
+                <h3>Recipe Ingredients </h3>
+                <ul>
+                    <li>Bread</li>
+                    <li>Peanut Butter</li>
+                    <li>Jelly</li>
+                </ul>
+
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Take two piece of bread and place them on a plate</li>
+                    <li>Put a thick layer of jelly on one piece of the bread</li>
+                    <li>Put a thick layer of peanut butter on the other piece of the bread</li>
+                    <li>RPut the two pieces of bread together so they face each other</li>
+                </ol>
+            </div>
+
+            <h3>Additional Food images</h3>
+            <div class="gallery">
+                <img src="images/pbj2.jpg" width="200" alt="Peanut Butter and Jelly in the process of being make">
+                <img src="images/pbj3.jpg" width="200" alt="PBJ finished product 1">
+                <img src="images/pbj4.jpg" width="200" alt="PBJ finished product 2 ">
+            </div>
+
+            <!-- Alexander Likens -->
+        </div>
+        <div class="recipe">
+            <h2>Spicy Chicken Sandwich</h2>
+            <span>Origin: America</span>
+            <span>Source: Original recipe!</span>
+            <span>Category: Main Dish</span>
+            <img class="main-dish" src="images/spicy-chicken-sandwich-recipe.jpg" width="400" alt="">
+
+            <p></p>
+            
+            <h3>Recipe</h3>
+            <button class="recipe-3" onclick="eitherChange('recipe-3')">Show More</button>
+            <!-- <button onclick="myHide('recipe-3')">Hide</button> -->
+            <div class="hide" id="recipe-3">
+                <h3>Recipe Ingredients</h3>
+                <ul>
+                    <li>1.5lb chicken thigh</li>
+                    <li>2 tbsp garlic powder</li>
+                    <li>2 tbsp smoked paprika</li>
+                    <li>1 tbsp cumin</li>
+                    <li>1 tbsp black pepper</li>
+                    <li>dash/pinch of salt</li>
+                    <li>3 cups of flour</li>
+                    <li>3 tbsp oil</li>
+                    <li>1 tbsp hot sauce</li>
+                    <li>1 cup preferred hot sauce</li>
+                    <li>2 eggs</li>
+                    <li>1 tsp black pepper </li>
+                    <li>dash salt</li>
+                    <li>4 tbsp melted butter</li>
+                    <li>4 hamburger buns</li>
+                    <li>crinkled pickles</li>
+                    <li>tomatoes</li>
+                    <li>lettuce</li>
+                    <li>Chipotle Mayo</li>
+                </ul>
+
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Wash your chicken and leave it to rest in a bowl</li>
+                    <li>Begin working on your marinade. In a medium/large bowl, combine your hot sauce, eggs, black pepper, butter, and salt one-by-one. Mix until fully dissolved</li>
+                    <li>In a separate bowl, combine flour, garlic powder, paprika, cumin, black pepper, salt together. Whisk thoroughly.</li>
+                    <li>Prep your chicken thigh by poking holes with a fork across its surface on both sides. Place your chicken into the marinade mix and let rest for 1-2h. (if speed is needed, can do a quick soak of 10-15min)</li>
+                    <li>Place your marinated chicken into flour mixture and toss. Place back in marinade and redcoat. Repeat 2-3 times.</li>
+                    <li>Prepare your vegetables and set them aside.</li>
+                    <li>Grab a deep pan and add your oil on medium-high heat. Fry in oil for 4-5min on each side.</li>
+                    <li>Remove chicken thigh and toss in 1tbsp hot sauce before plating. </li>
+                    <li>Combine the buns, toppings, and chicken and serve!</li>
+                </ol>
+            </div>
+
+            <h3>Additional Food images</h3>
+            <div class="gallery">
+                <img src="images/chicken_breast_marinade.jpeg" width="200" alt="Chicken breast will be marinated for one to two hours.">
+                <img src="images/bun_with_toppings.jpeg" width="200" alt="Example of the prepared hamburger buns before chicken is added">
+                <img src="images/final_product_chicksandwich.jpeg" width="200" alt="Your succulent final product!">
+            </div>
+
+            <!-- Johann Tsegay -->
+        </div>
+    </main>
+</body>
+</html>

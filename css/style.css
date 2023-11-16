@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    display: none;
+    color: #000000;
+    font-family: 'Ubuntu';
+}
+
+/* Header */
+
+#skip {
+    position: fixed;
+    top: -20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Navigation */
+
+nav {
+    display: block;
+    width: 95%;
+    margin: 0px auto;
+}
+
+nav li:hover {
+    background-color: #22282c;
+}
+
+nav ul {
+    padding-left: 0px;
+}
+
+nav li {
+    display: block;
+    padding: 2px 0px;
+    background-color: #4e5c64;
+}
+
+.item-1 {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.item-3 {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.active {
+    background-color: #023b06;
+}
+
+.active-icon {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    margin-left: 10px;
+    animation-name: icon-transformation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+    width: 90%;
+}
+
+@keyframes icon-transformation {
+    0% {border-radius: 100%;}
+    50% {border-radius: 0%;}
+    100% {border-radius: 100%;}
+}
+
+.icon {
+    display: none;
+    visibility: hidden;
+    width: 5px;
+    height: 5px;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+li:hover .icon {
+    display: inline-block;
+    visibility: visible;
+    animation-name: icon-transformation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    li:hover .icon {
+        animation-iteration-count: 0;
+    }
+
+    .active-icon {
+        animation-iteration-count: 0;
+    }
+}
+
+li:hover a {
+    padding-left: 10px;
+}
+
+/* Pets */
+
+div {
+    width:80%;
+    margin: auto;
+}
+
+div.pet, div.recipe, div.location{
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 10px auto 10px auto;
+}
+
+div.pet > img, div.starting-image > img, .main-dish {
+    width: 80%;
+    height: auto;
+}
+
+div#description {
+    width: 100%;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+/* div.hide {
+    width: 100%;
+} */
+
+img{
+    aspect-ratio: 1 / 1;
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #015048;
+    padding: 2px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+div.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+}
+
+div.hide {
+    display: none;
+}
+
+button {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.buttons {
+    text-align: center;
+}
+
+/* Travel */
+
+.gif {
+    display: block;
+}
+
+.img {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gif { display: none; }
+    .img { display: block; } 
+}
+
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+div.lb-container {
+    width: 100%;
+}
+
+/* Recipe */
+
+.main-dish {
+    margin: 10px auto;
+}
+
+span {
+    display:block;
+}
+
+#ingredients-1, #ingredients-2, #ingredients-3, #recipe-1, #recipe-2, #recipe-3 {
+    display: none;
+    margin: 0px;
+}
+
+/* #e20d32 */
+
+
+/* Tablets */
+@media (min-width: 760px) {
+
+    /* and (max-width: 991px) */
+
+    #skip:focus {
+        position: absolute;
+        top: 10px;
+    }
+
+    /* Nav */
+
+    nav li {
+        display: inline-block;
+        width: 30%;
+    }
+
+    nav a {
+        width: 80%;
+    }
+
+    .item-1 {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .item-3 {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    /* div.ls {
+        display: flex;
+        justify-content: center;
+    } */
+
+
+    /* Pets */
+
+    div.pet > img, div.starting-image {
+        width: 48%;
+        margin: auto 0;
+        display: inline-block;
+        vertical-align:top;
+    }
+
+    div.pet div.hide {
+        margin: auto auto auto 0;
+    }
+
+    div.pet button {
+        display: none;
+    }
+
+    div.hide {
+        display: block;
+    }
+
+
+
+    div#description {
+        display: inline-block;
+        width: 48%;
+    }
+
+    div#description div {
+        width: 90%;
+        margin: auto;
+    }
+
+    div.gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div#travel.gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    div#travel.gallery img {
+        width: 100px;
+        height: 100px;
+    }
+
+    
+}
+
