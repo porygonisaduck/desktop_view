@@ -228,8 +228,6 @@ span {
 /* Tablets */
 @media (min-width: 760px) {
 
-    /* and (max-width: 991px) */
-
     #skip:focus {
         position: absolute;
         top: 10px;
@@ -259,6 +257,9 @@ span {
         justify-content: center;
     } */
 
+}
+
+@media (min-width: 760px) {
 
     /* Pets */
 
@@ -280,7 +281,6 @@ span {
     div.hide {
         display: block;
     }
-
 
 
     div#description {
@@ -310,3 +310,81 @@ span {
     
 }
 
+/* Desktop Smaller */
+
+@media (min-width: 992px) {
+    div.gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1300px) {
+ 
+    /* Pets */
+
+    .pet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr 5fr;
+    }
+
+    h2 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    div.pet > img, div.starting-image {
+        width: 90%;
+        grid-row: 2 / span 2;
+        grid-column: 1;
+    }
+
+    div.pet div.hide {
+        margin: auto auto auto 0;
+    }
+
+    div.pet button {
+        display: none;
+    }
+
+    div.hide {
+        display: block;
+    }
+
+    div#description {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    div#description div {
+        width: auto;
+        margin: auto;
+    }
+
+    div.images {
+        width: 100%;
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    div.gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    div#travel.gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    div#travel.gallery img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
