@@ -13,15 +13,17 @@
     <header><h1>Pets</h1></header>
     <nav>
         <div>
-            <li class="item-1 active"><div class="icon"></div><a href="index.html">Pets<div class="active-icon"></div></a></li>
-            <li class="item-2"><div class="icon"></div><a href="recipes.html">Recipes</a></li>
-            <li class="item-3"><div class="icon"></div><a href="travel.html">Travel</a></li>
+            <ul>
+                <li class="item-1 active"><div class="icon"></div><a href="index.html">Pets<div class="active-icon"></div></a></li>
+                <li class="item-2"><div class="icon"></div><a href="recipes.html">Recipes</a></li>
+                <li class="item-3"><div class="icon"></div><a href="travel.html">Travel</a></li>
+            </ul>
         </div>
     </nav>
     <main id="main">
         <div class="pet">
             <h2>Luna</h2>
-            <img id="display" src="images/luna.PNG" alt="Mini German shepherd sunbathing">
+            <img class="display" src="images/luna.PNG" alt="Mini German shepherd sunbathing">
 
 
             <div id="description">
@@ -34,7 +36,7 @@
                     <button onclick="myHide('luna')">Hide</button>
                 </div>
         
-                <div class="hide" id="luna">
+                <div class="hide" name="luna">
                     <p>Luna is a very jealous, loving, and protective dog. She really embraces her inner chihuahua and will bark at any stranger, car, or noise at night. She makes the perfect guard dog. But she is not at all aggressive. Luna is all bark no bite!</p>
                     <h3>Likes</h3>
                     <ul>
@@ -44,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="luna">
+            <div class="hide images" name="luna">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/luna_puppy.PNG" alt = "Luna as a puppy">
@@ -57,7 +59,7 @@
         </div>
         <div class="pet">
             <h2>Cooper</h2>
-            <img id="display" src="images/cooper.jpeg" alt="Border collie and lab mix laying his head on his stuffed animal toy">
+            <img class="display" src="images/cooper.jpeg" alt="Border collie and lab mix laying his head on his stuffed animal toy">
 
             <div id="description">
                 <div>
@@ -69,7 +71,7 @@
                     <button onclick="myHide('cooper')">Hide</button>
                 </div>
             
-                <div class="hide" id="cooper">
+                <div class="hide" name="cooper">
                     <p>Whenever it is movie night, Cooper has to join on the couch/bed or he feels left out. He loves to cuddle and pats on his tummy. Cooper will play fetch for about 2 or 3 rounds, but he quickly gets bored. He leaves his toys all around the house for the rest of the family to find.</p>
                     <h3>Likes</h3>
                     <ul>
@@ -79,7 +81,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="cooper">
+            <div class="hide images" name="cooper">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/cooper_closeup.JPG" alt = "Border collie / lab mix putting his face close to the camera">
@@ -92,7 +94,7 @@
         </div>
         <div class="pet">
             <h2>Jiji</h2>
-            <img id="display" src="images/table_jiji.jpg" alt="Gorgeous gray tabby cat with yellow eyes. ">
+            <img class="display" src="images/table_jiji.jpg" alt="Gorgeous gray tabby cat with yellow eyes. ">
 
             <div id="description">
                 <div>
@@ -104,7 +106,7 @@
                     <button onclick="myHide('jiji')">Hide</button>
                 </div>
             
-                <div class="hide" id="jiji">
+                <div class="hide" name="jiji">
                     <p>In her free time she likes to sit on the windowsill and people watch. She also likes to collect any stray ponytails she can find in bathrooms, on the floor, and on bedside tables. She has a very high pitched meow and loves to be brushed.</p>
                     <h3>Likes</h3>
                     <ul>
@@ -114,7 +116,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="jiji">
+            <div class="hide images" name="jiji">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/fridge_jiji.jpg" alt = "Jiji sitting on a mini fridge. ">
@@ -127,7 +129,7 @@
         </div>
         <div class="pet">
             <h2>Cooky</h2>
-            <img id="display" src="images/cookysmiley.jpg" alt="White and gray Bernedoodle sitting on a couch and smiling.">
+            <img class="display" src="images/cookysmiley.jpg" alt="White and gray Bernedoodle sitting on a couch and smiling.">
 
             <div id="description">
                 <div>
@@ -139,7 +141,7 @@
                     <button onclick="myHide('cooky')">Hide</button>
                 </div>
             
-                <div class="hide" id="cooky">
+                <div class="hide" name="cooky">
                     <p>He is still a baby, but he can get super hyper. Whenever someone rings the doorbell, Cooky gets really excited, barking and dashing towards the front door. He also jumps really high when he’s hyper and wags his tail like crazy. Overall, though, he likes to chill and cuddle just as much as he likes to play.</p>
                     <h3>Likes</h3>
                     <ul>
@@ -149,7 +151,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="cooky">
+            <div class="hide images" name="cooky">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/cookytreat.jpg" alt = "Cooky eating one of his favorite treats while lying on the ground">
@@ -162,7 +164,7 @@
         </div>
         <div class="pet">
             <h2>Cheeto (Chicken)</h2>
-            <img id="display" src="images/cheeto_cattree.jpg" alt="Orange cat hanging paws off a cat tower">
+            <img class="display" src="images/cheeto_cattree.jpg" alt="Orange cat hanging paws off a cat tower">
 
             <div id="description">
                 <div>
@@ -174,7 +176,7 @@
                     <button onclick="myHide('cheeto')">Hide</button>
                 </div>
             
-                <div class="hide" id="cheeto">
+                <div class="hide" name="cheeto">
                     <p>Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged.</p>
                     <h3>Likes</h3>
                     <ul>
@@ -184,7 +186,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="cheeto">
+            <div class="hide images" name="cheeto">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/cheeto_carpet.jpg" alt = "Cheeto laying sideways on the carpet">
@@ -197,7 +199,7 @@
         </div>
         <div class="pet">
             <h2>Milktea</h2>
-            <img id="display" src="images/main.JPG" alt="Milktea taking nap">
+            <img class="display" src="images/main.JPG" alt="Milktea taking nap">
 
             <div id="description">
                 <div>
@@ -209,7 +211,7 @@
                     <button onclick="myHide('milktea')">Hide</button>
                 </div>
             
-                <div class="hide" id="milktea">
+                <div class="hide" name="milktea">
                     <p>Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally brought upon by humans. I highly advise against keeping a Scottish fold because they are in constant pain when they reach around 2 years old. Cartilage accumulates around her paw joints and tail joints and it becomes painful for them to even walk. She is living evidence of human’s cruelty of breeding animals to look pretty while sacrificing the animals’ health.  </p>
                     <h3>Likes</h3>
                     <ul>
@@ -219,7 +221,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="milktea">
+            <div class="hide images" name="milktea">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/milktea_comfy.jpg" alt="Milktea enjoying a good massage">
@@ -232,7 +234,7 @@
         </div>
         <div class="pet">
             <h2>Jax</h2>
-            <img id="display" src="images/jax.jpg" alt="A black and white kitten sitting down and wearing a yellow collar.">
+            <img class="display" src="images/jax.jpg" alt="A black and white kitten sitting down and wearing a yellow collar.">
             <div id="description">
                 <div>
                     <p>Jax is a kitten, about five months old that I found this summer at a gas station while traveling to Marquette, Michigan. He was scared and malnourished, crying in the parking lot. I took him with me and after some healthy meals and a trip to the vet he is doing great!</p> 
@@ -243,7 +245,7 @@
                     <button onclick="myHide('jax')">Hide</button>
                 </div>
             
-                <div class="hide" id="jax">
+                <div class="hide" name="jax">
                     <p>My roommates and I just recently moved and Jax has been having a hard time getting used to the large house since we were previously living in a small apartment. Jax is incredibly playful and loves to run around, but when he is sleepy he is happy to be held. </p>
                     <h3>Likes</h3>
                     <ul>
@@ -253,7 +255,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="hide images" id="jax">
+            <div class="hide images" name="jax">
                 <h3>Photo Gallery</h3>
                 <div class="gallery">
                     <img class="thumbnail" src="images/jaxandmax.jpg" alt="Black and white kitten standing on the drivers arm while on a road trip.">

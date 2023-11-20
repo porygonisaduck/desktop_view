@@ -6,7 +6,7 @@ for (let i = 0; i < pets.length; ++i) {
 
     for (let i = 0; i < thumbnails.length; ++i){
         thumbnails[i].addEventListener("mouseover", function() {
-            let display = pet.querySelector("#display");
+            let display = pet.querySelector(".display");
             display.alt = this.alt;
             display.setAttribute('og', display.src);
             display.src = this.src;
@@ -15,7 +15,7 @@ for (let i = 0; i < pets.length; ++i) {
         thumbnails[i].setAttribute("tabindex", 0);
 
         thumbnails[i].addEventListener("mouseleave", function() {
-            let display = pet.querySelector("#display");
+            let display = pet.querySelector(".display");
             display.src = display.getAttribute("og");
             display.innerHTML = "Hover over an image below to display the image and the alt text.";
 

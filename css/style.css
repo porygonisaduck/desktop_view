@@ -132,7 +132,7 @@ div.pet > img, div.starting-image > img, .main-dish {
     height: auto;
 }
 
-div#description {
+div.description {
     width: 100%;
 }
 
@@ -283,12 +283,12 @@ span {
     }
 
 
-    div#description {
+    div.description {
         display: inline-block;
         width: 48%;
     }
 
-    div#description div {
+    div.description div {
         width: 90%;
         margin: auto;
     }
@@ -407,13 +407,13 @@ span {
         display: block;
     }
 
-    div#description {
+    div.description {
         width: 100%;
         grid-row: 2;
         grid-column: 2;
     }
 
-    div#description div {
+    div.description div {
         width: auto;
         margin: auto;
     }
