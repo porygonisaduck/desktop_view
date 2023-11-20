@@ -297,16 +297,15 @@ span {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    div#travel.gallery {
+    div.gallery.travel {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     }
 
-    div#travel.gallery img {
+    div.gallery.travel img {
         width: 100px;
         height: 100px;
     }
-
     
 }
 
@@ -336,7 +335,7 @@ span {
         width: 50%;
     }
 
-    div#travel.gallery {
+    div.gallery.travel {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
@@ -367,7 +366,7 @@ span {
         grid-row: 2;
     }
 
-    div#travel.gallery img {
+    div.gallery.travel img {
         width: 80%;
         height: 80%;
     }
