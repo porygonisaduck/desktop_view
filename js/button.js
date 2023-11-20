@@ -16,9 +16,14 @@ function myShow(name) {
     const hide = document.getElementsByClassName('hide');
     
     let defaults = 2;
+
+    if (name.slice(0,6) == "recipe") {
+        defaults = 1;
+    }
+
     for (let i = 0; i < hide.length; i+=defaults) {
         console.log(i);
-        if (hide[i].getAttribute('name') == name) {
+        if (hide[i].getAttribute('id') == name) {
             hide[i].style.display = "block";
             try {
                 hide[i+1].style.display = "block";
@@ -28,10 +33,6 @@ function myShow(name) {
             }
 
         }
-
-        if (name.slice(0,6) == "recipe") {
-            defaults = 1;
-        }
     }
 }
 
@@ -39,6 +40,11 @@ function myHide(name) {
     const hide = document.getElementsByClassName('hide');
 
     let defaults = 2;
+
+    if (name.slice(0,6) == "recipe") {
+        defaults = 1;
+    }
+
     for (let i = 0; i < hide.length; i+=defaults) {
         if (hide[i].getAttribute('name') == name) {
             hide[i].style.display = "none";
@@ -48,10 +54,6 @@ function myHide(name) {
             catch {
                 continue;
             }
-        }
-
-        if (name.slice(0,6) == "recipe") {
-            defaults = 1;
         }
     }
 }
