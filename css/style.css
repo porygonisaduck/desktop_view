@@ -313,11 +313,67 @@ span {
 /* Desktop Smaller */
 
 @media (min-width: 992px) {
-    div.gallery {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .food {
+        background-image: url("../images/food_line.jpg");
+    }
+
+    .recipe {
+        background-color: white;
+    }
+
+    div.recipe .gallery img {
+        width: 150px;
+        height: 150px;
+    }
+
+    div.recipe .gallery img:hover {
+        width: 200px;
+        height: 200px;
+    }
+
+    .main-dish {
+        width: 50%;
+    }
+
+    div#travel.gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .figure1 {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .figure2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .figure3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .figure4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .figure5 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    div#travel.gallery img {
+        width: 80%;
+        height: 80%;
     }
 }
 
+/* Desktop Larger */
 @media (min-width: 1300px) {
  
     /* Pets */
@@ -372,19 +428,9 @@ span {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    div#travel.gallery {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-    }
-
-    div#travel.gallery img {
-        width: 100px;
-        height: 100px;
-    }
-
-
     img {
         width: 90%;
         height: 90%;
     }
+
 }
